@@ -8,11 +8,11 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.2.8",
-    "hamburger-react": "^2.4.1",
+    "hamburger-react": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "react-scroll": "^1.8.6",
+    "react-scroll": "^1.9.0",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^1.42.4",
     "web-vitals": "^2.1.4"
@@ -45,8 +45,9 @@
     "gh-pages": "^3.2.3"
   },
   "overrides": {
-    "react-typical": {
-      "react": "^17.0.2"
-    }
+  "react-scroll": {
+    "react": "^18.3.1"
   }
+}
+
 }
