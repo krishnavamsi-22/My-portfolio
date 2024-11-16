@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+import { Typewriter } from "react-simple-typewriter"; // Importing Typewriter from react-simple-typewriter
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -16,7 +16,7 @@ const Home = () => {
         style={
           darkMode
             ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
-            : { backgroundImage: `url('${cloudDark}'`, backgroundSize: "cover" }
+            : { backgroundImage: `url('${cloudDark}')`, backgroundSize: "cover" }
         }
       >
         <main
@@ -31,14 +31,17 @@ const Home = () => {
                 Hi, I am Krishna Vamsi
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
+                <Typewriter
+                  words={[
                     "Full Stack Developer",
-                    1000,
                     "Machine Learning Developer",
-                    1000,
                   ]}
                   loop={Infinity}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
                 />
               </span>
             </h1>
